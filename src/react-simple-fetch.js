@@ -37,9 +37,7 @@ class SimpleFetch extends React.Component {
   }
 
   mapChildren(children, d, as) {
-    return d.map((data, i) => {
-      return React.cloneElement(children, Object.assign({}, children.props, { key: i, [as]: data }));
-    });
+    return d.map((data, i) => React.cloneElement(children, Object.assign({}, children.props, { key: i, [as]: data })));
   }
 
   renderChild(children, data, as) {
@@ -50,7 +48,7 @@ class SimpleFetch extends React.Component {
     const { data } = this.state;
     const { children, mapResponse, as, loader } = this.props;
     if (!data) {
-      if(loader && loader.props){
+      if (loader && loader.props) {
         return loader;
       }
       return null;
@@ -62,9 +60,8 @@ class SimpleFetch extends React.Component {
         return <div>{this.mapChildren(children, data, as)}</div>;
       }
       return this.renderChild(children, data, as);
-    } else {
-      return this.renderChild(children, data, as);
     }
+    return this.renderChild(children, data, as);
   }
 }
 
