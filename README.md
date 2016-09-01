@@ -2,9 +2,15 @@
 
 React component to fetch() data and automatically bind the result as props for the child component(s).
 
+## Get it
+
+```npm install react-simple-fetch --save```
+
 ## Usage
 
 ```jsx
+import SimpleFetch from 'react-simple-fetch';
+
 <SimpleFetch url='https://api.github.com/repos/octocat/Hello-World'>
   <YourAwesomeComponent />
 </SimpleFetch>
