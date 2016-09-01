@@ -26,9 +26,7 @@ class SimpleFetch extends React.Component {
         } else {
           data = d;
         }
-        this.setState({ data }, () => {
-          this.forceUpdate();
-        });
+        this.setState({ data });
       }
     });
   }
