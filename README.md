@@ -46,7 +46,7 @@ type Props = {
 </SimpleFetch>
 ```
 
-### More Docs coming soon
+### (More & better docs coming soon...)
 
 ## Contributing
 
