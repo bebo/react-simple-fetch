@@ -72,8 +72,8 @@ SimpleFetch.displayName = 'SimpleFetch';
 
 
 SimpleFetch.propTypes = {
-  url: React.PropTypes.string.isRequired,
   children: React.PropTypes.any.isRequired,
+  url: React.PropTypes.string.isRequired,
   forceHttps: React.PropTypes.bool,
   path: React.PropTypes.string,
   mapResponse: React.PropTypes.any,
