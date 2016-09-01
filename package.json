@@ -1,0 +1,46 @@
+{
+  "name": "react-simple-fetch",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.build.config.js",
+    "build:dev": "webpack --config ./webpack.dev.config.js",
+    "clean": "rimraf dist/*",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bebo/react-simple-fetch.git"
+  },
+  "keywords": [
+    "react",
+    "fetch",
+    "simple",
+    "wrapper"
+  ],
+  "author": "Jonas Daniels",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bebo/react-simple-fetch/issues"
+  },
+  "homepage": "https://github.com/bebo/react-simple-fetch#readme",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": "^15.0.0-0",
+    "whatwg-fetch": "^1.0.0",
+    "deep-find": "0.0.0-alpha"
+  },
+  "devDependencies": {
+    "react": "^15.0.0-0",
+    "whatwg-fetch": "^1.0.0",
+    "deep-find": "0.0.0-alpha",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "webpack": "^1.13.2",
+    "rimraf": "^2.5.1"
+  }
+}

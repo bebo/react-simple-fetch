@@ -1,0 +1,21 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": "airbnb",
+  "rules": {
+    "no-console": 0,
+    "no-unused-vars": 1,
+    "no-undef": 0,
+    "prefer-arrow-callback": 1,
+    "no-nested-ternary": 0,
+    "max-len": 0,
+    "react/jsx-no-bind":0
+  }
+}
